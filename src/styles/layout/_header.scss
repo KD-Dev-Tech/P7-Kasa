@@ -1,0 +1,36 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 45px 100px 0px 100px;
+    margin-bottom: 50px;
+    
+    .nav-bar{
+        display: flex;
+        gap: 30px;
+        list-style-type: none;
+        padding-left: 30px;
+    }
+
+    a {
+        text-decoration: none;
+        color: #000000;
+        text-wrap: nowrap;
+    }
+
+    
+}
+@media (max-width: 768px){
+        header{
+            padding: 20px;
+            margin: 0;
+        }
+        .logo{
+            width: 100%;
+        }
+    }
+@media (max-width: 320px){
+    header{
+        font-size: 12px;
+    }
+}   
