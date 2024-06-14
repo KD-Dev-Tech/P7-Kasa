@@ -1,7 +1,12 @@
-const Home = () => {
+
+import Banner from "../components/Banner";
+import Gallery from "../components/Gallery";
+
+function Home() {
     return (
-        <div>
-            <h1>Home</h1>
+        <div className='home'>
+            <Banner />
+            <Gallery />
         </div>
     );
 }

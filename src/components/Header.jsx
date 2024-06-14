@@ -1,13 +1,20 @@
-const Header = () => {
+import logo from '../assets/logo/Logo.png'
+import { NavLink } from 'react-router-dom';
+
+function Header ()  {
     return (
         <header>
             <div>
-                <img className="logo" src="./src/assets/logo/Logo.png" alt="Logo Kasa" />
+                <img className="logo" src={logo} alt="Logo Kasa" />
             </div>
             <nav>
                 <ul className="nav-bar">
-                    <li><a href="/"><strong>Accueil</strong></a></li>
-                    <li><a href="/about"><strong>A Propos</strong></a></li>
+                    <NavLink to="/" className = {({isActive}) => (isActive ? "underline" : "")}>            
+                        <li>Acceuil</li>
+                    </NavLink>
+                    <NavLink to = "/about" className = {({isActive}) => (isActive ? "underline" : "")}>
+                        <li>A Propos</li>
+                    </NavLink>
                 </ul>
             </nav>
         </header>

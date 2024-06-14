@@ -1,9 +1,7 @@
+@import'./layout/general.scss';
 @import './layout/header.scss';
-
-*{
-    font-family: 'Montserrat'; 
-    margin: 0;
-    
-}
-
+@import './layout/footer.scss';
+@import './components/banner.scss';
+@import './components/gallery.scss';
+@import './layout/home.scss';
 
