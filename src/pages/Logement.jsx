@@ -1,8 +1,8 @@
-const Logement = () => {
+import Carousel from "../components/Carousel";
+
+const logement = () => {
     return (
-        <div>
-            <h1>Logement</h1>
-        </div>
+        <Carousel />
     );
 }
-export default Logement;
+export default logement;
