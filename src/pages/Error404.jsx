@@ -1,7 +1,12 @@
-const Error404 = () => {
+
+function Error404() {
+
     return (
-        <div>
-            <h1>Error404</h1>
+        <div className="error">
+            <h1>404</h1>
+            <p>Oups! La page que vous demandez n&apos;existe pas.</p>
+            <a href="/">Retournez sur la page d acceuil</a>
+
         </div>
     );
 }
