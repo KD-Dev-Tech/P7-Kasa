@@ -1,7 +1,12 @@
-const About = () => {
+import Banner from '../components/Banner';
+import img from '../assets/images/banner-about.png'
+import InfoPropos from '../components/infoPropos';
+
+function About() {
     return (
-        <div>
-            <h1>About</h1>
+        <div className="home">
+            <Banner src={img} />
+            <InfoPropos />
         </div>
     );
 }
