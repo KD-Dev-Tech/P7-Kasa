@@ -1,0 +1,16 @@
+.rating {
+
+    .stars {
+        display: flex;
+        gap: 5px;
+        margin: 25px 0 0 20px;
+
+        i {
+            font-size: 14px;
+            color: $primary-color;
+            
+        }
+
+        
+    }
+}

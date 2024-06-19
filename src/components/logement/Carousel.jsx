@@ -1,24 +1,32 @@
 import { useParams } from "react-router-dom"; 
 import { useState } from "react";
-import logement from '../data/logements.json';
+import logement from '../../data/logements.json';
 
+//  creation d' un carousel
 const SlideShow = () => {
+    //récupérer l'id du logement
     const { id } = useParams();
+
+    // récupéreration des données du logement en fonction de l'id
     const logementData = logement.find((logement) => logement.id === id);
+
+    // change l'image du carousel
     const [index, setIndex] = useState(0); 
     const chevronLeft = "fa-solid fa-chevron-left";
     const chevronRight = "fa-solid fa-chevron-right";
   
+    // next picture
     const right = () => { 
-      setIndex((prevIndex) => {
-        let newIndex = prevIndex + 1;
+      setIndex((nextIndex) => {
+        let newIndex = nextIndex + 1;
         if (newIndex >= logementData.pictures.length) {
           newIndex = 0;
         }
         return newIndex;
       });
     };
-  
+
+    // previous picture
     const left = () => { 
       setIndex((prevIndex) => {
         let newIndex = prevIndex - 1;
@@ -28,7 +36,8 @@ const SlideShow = () => {
         return newIndex;
       });
     };
-  
+
+  // affichage du carousel
     return (
         <div className="carousel">
           <img src={logementData.pictures[index]} alt={logementData.title} /> 
@@ -46,3 +55,4 @@ const SlideShow = () => {
   }
   
   export default SlideShow;
+  

@@ -1,0 +1,26 @@
+.host {
+    position: relative;
+    bottom: 25px;
+    display: flex;
+    justify-content: end;
+    text-align: center;
+    margin-right: 25px;
+    gap: 10px;
+
+
+    .host-name {
+        display: flex;
+        width: 62px;
+        text-align: end;
+        color: $primary-color;
+        font-size: 12px;
+    }
+    
+    img {
+        width: 36px;
+        height: 36px;
+        border-radius: 25px;
+    }
+}
+    
+

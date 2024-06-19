@@ -1,7 +1,7 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
 
-export default function Dropdown({ title, children }) {
+ function Dropdown({ title, children }) {
 Dropdown.propTypes = {
   title: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired
@@ -25,3 +25,4 @@ Dropdown.propTypes = {
     </div>
   </>;
 }
+export default Dropdown;

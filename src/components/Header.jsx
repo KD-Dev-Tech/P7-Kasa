@@ -10,7 +10,7 @@ function Header ()  {
             <nav>
                 <ul className="nav-bar">
                     <NavLink to="/" className = {({isActive}) => (isActive ? "underline" : "")}>            
-                        <li>Acceuil</li>
+                        <li>Accueil</li>
                     </NavLink>
                     <NavLink to = "/about" className = {({isActive}) => (isActive ? "underline" : "")}>
                         <li>A Propos</li>

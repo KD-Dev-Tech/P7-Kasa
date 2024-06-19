@@ -1,0 +1,19 @@
+
+
+.location {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    margin: 0 55px 0 20px;
+
+    h1 {
+        font-size: 18px;
+        margin: 0;
+        color: $primary-color;
+    }
+
+    p {
+       margin:10px 0 0 0;
+       font-size: 14px;
+    }
+}
