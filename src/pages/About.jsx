@@ -13,7 +13,7 @@ function About ({ style }) {
     return (
         <div className="home">
             <Banner src={img} style={{...style, filter: 'brightness(70%)' }}/>
-        <div className='MenuDropDown' style={{...style, flexDirection: 'column', alignItems: 'center', gap:'0', fontSize: '24px' }}>
+        <div className='MenuDropDown' style={{...style, flexDirection: 'column', alignItems: 'center', gap:'0'}}>
             {[...Info].map((info, index) => {
                 return (
                     <div className='container' key={index}>
