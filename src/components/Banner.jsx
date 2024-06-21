@@ -1,9 +1,12 @@
 import PropTypes from 'prop-types';
 
-const Banner = ({ src, text }) => {
+const Banner = ({ src, text, style }) => {
+
+
+
     return (
         <div className="banner">
-            <img src={src} alt="Baniere du site" />  
+            <img style={style} src={src} alt="Baniere du site" />  
             <h1>{text}</h1>
         </div>
     )
@@ -11,7 +14,8 @@ const Banner = ({ src, text }) => {
 
 Banner.propTypes = {
     src: PropTypes.string.isRequired,
-    text: PropTypes.string
+    text: PropTypes.string,
+    style: PropTypes.object
 }
 
 export default Banner;

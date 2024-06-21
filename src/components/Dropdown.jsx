@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
  function Dropdown({ title, description }) {
   Dropdown.propTypes = {
   title: PropTypes.string,
-  description: PropTypes.node
+  description: PropTypes.node,
 };
 
   const [isDisplayed, setIsDisplayed] = useState(false);

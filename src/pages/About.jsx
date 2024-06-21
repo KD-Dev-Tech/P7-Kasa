@@ -2,23 +2,27 @@ import Banner from '../components/Banner';
 import img from '../assets/images/banner-about.png'
 import Dropdown from '../components/Dropdown';
 import Info from'../data/apropos.json'
+import PropTypes from "prop-types";
 
 
-function About() {
-    
-    Info.map(() => {
-    //    console.log(Info);
-    });
-   
+function About ({ style }) {
+    About.propTypes = {
+        style: PropTypes.object,
+    };
+
     return (
         <div className="home">
-            <Banner src={img} />
-           <div className='MenuDropDown'>
+            <Banner src={img} style={{...style, filter: 'brightness(70%)' }}/>
+        <div className='MenuDropDown' style={{...style, flexDirection: 'column', alignItems: 'center', gap:'0', fontSize: '24px' }}>
             {[...Info].map((info, index) => {
                 return (
-                    <Dropdown key={index} 
+                    <div className='container' key={index}>
+                    
+                    <Dropdown  
                         title={info.title} 
-                        description={info.description} />
+                        description={info.description}
+                        />
+                    </div>
                 )
             })}
             
