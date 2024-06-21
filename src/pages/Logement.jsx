@@ -18,19 +18,20 @@ function Logement () {
     }
 
     return (
-        <div>
+        <div className="container-logement" >
             <Carousel />
             <LocationLogement />  
             <Tags />
             <Rating />
             <Host />
-            <div className="MenuDropDownPropos">
-                <DropDown 
-                    title="Description" 
-                    description={logement.description} />
+            <div className="MenuDropDown">
+                    <DropDown 
+                        title="Description" 
+                        description={logement.description} />
 
-                <DropDown title="Equipements" 
-                    description={logement.equipments.map(equipment => <li key={equipment}>{equipment}</li>)} /> 
+                    <DropDown title="Equipements" 
+                        description={logement.equipments.map(equipment => <li key={equipment}>{equipment}</li>)} /> 
+                  
             </div>
             
         </div>

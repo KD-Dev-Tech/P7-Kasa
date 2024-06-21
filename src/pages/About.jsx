@@ -13,7 +13,7 @@ function About() {
     return (
         <div className="home">
             <Banner src={img} />
-           <div className='MenuDropDownPropos'>
+           <div className='MenuDropDown'>
             {[...Info].map((info, index) => {
                 return (
                     <Dropdown key={index} 

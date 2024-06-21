@@ -5,13 +5,12 @@
     justify-content: center;
     padding-top: 50px;
     padding-bottom: 40px;
-    margin-top: 40px;
     margin-bottom: 50px;
     height: 100%;
     width: 100%;
     background-color: #F6F6F6;
     border-radius: 25px;
-    gap: 70px;
+    gap: 60px;
 
    .gallery-item {
     position: relative;
@@ -53,4 +52,14 @@
             }
         }
     }
+}
+@media (max-width: 1024px){
+    .gallery{
+      gap: 40px; 
+        .gallery-item {
+            img {
+                height: 95%;
+              }
+        }
+    }    
 }

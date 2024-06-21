@@ -1,4 +1,4 @@
-.MenuDropDownPropos {
+.MenuDropDown {
     display: flex;
     flex-direction: column;
     max-width: 1440px;
@@ -21,7 +21,7 @@
         }
 
         i {
-            font-size: 24px;
+            font-size: 20px;
             margin-right: 18px;
             transition: transform 0.8s ease-in-out; 
             cursor: pointer;
@@ -37,32 +37,46 @@
         margin-top: -52px;  
         opacity: 0;
         z-index: -1;
-        transition: 1s;
+        transition: 0.2s;
         overflow: inherit;
+        
     
         p{
             padding-left: 15px;
+            padding-right: 15px;
+            height: 50px;
         }
     }
 }
 
 .dropdown-content.show {
     opacity: 1;
-    margin-top: 0px;
+    margin-top: 0;
     margin-bottom: 31px;
+
+    p {
+       height: 100%;
+    }
   }
 
   .rotate {
     transform: rotate(180deg);
-    transition: transform 0.8s ease-in-out;
   }
 
 @media (max-width: 768px) {
-    .MenuDropDownPropos {
+    .MenuDropDown {
         width: 100%;
         margin: 0;
-        margin-top: 30px;
-        gap: 10px;
+        margin-top: -10px;
+
+        button {
+            height: 30px;
+
+            p{
+                font-size: 13px;
+            
+            }
+        }
         
         .dropdown-content{
             font-size: 12px;
@@ -71,7 +85,7 @@
 }
 
 @media (max-width: 320px) {
-    .MenuDropDownPropos {
+    .MenuDropDown {
         gap: 0;
     }
 }
