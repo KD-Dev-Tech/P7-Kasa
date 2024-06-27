@@ -13,7 +13,8 @@ function Rating() {
             <div className="stars">
                 {[...Array(5)].map((star, index) => {
                     return (
-                        <i key={index} className={index < rating.rating ? starsFull : starsEmpty} style={{color: index < rating.rating ? '' : '#e3e3e3'}}></i>                    )
+                        <i key={index} className={index < rating.rating ? starsFull : starsEmpty} style={{color: index < rating.rating ? '' : '#e3e3e3'}}></i>
+                    )
                 })}
             </div>
         </div>

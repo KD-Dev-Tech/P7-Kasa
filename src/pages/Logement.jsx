@@ -16,12 +16,11 @@ function Logement () {
     const navigate = useNavigate();
     const logement = LogementId.find(logement => logement.id === id);
 
-    // si le logement n'existe pas, on redirige vers la page d'erreur 404
     useEffect(() => {
         if (!logement) {
             navigate('/Error404');
         }
-    },[logement, navigate]); // on ajoute navigate dans les dépendances pour éviter un warning
+    },[logement, navigate]); 
 
     if (!logement) {
         return null;
@@ -48,9 +47,7 @@ function Logement () {
                     </div>
                 </div>    
             </div>
-        </div>
-        
-    );
-    
+        </div>   
+    );   
 }
 export default Logement;

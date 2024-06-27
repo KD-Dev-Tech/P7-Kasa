@@ -3,9 +3,6 @@
     max-width: 1440px;
     gap: 74px;
     
-
-   
-   
     button {
         display: flex;
         justify-content: space-between;
@@ -17,22 +14,20 @@
         color: white;
         border: none;
         
-        p {
-            font-size: 18px;
-            font-weight: 700;
+        h2 {
             padding-left: 10px;
         }
 
         i {
             font-size: 20px;
             margin-right: 18px;
-            transition: transform 0.8s ease-in-out; 
+            transition: transform 0.2s ease-in-out; 
             cursor: pointer;
         }
-    }
+}
       
     .dropdown-content {
-        font-size: 16px;
+        font-size: 18px;
         font-weight: 500;
         width: 100%;
         text-align: left;
@@ -40,7 +35,7 @@
         margin-top: -52px;  
         opacity: 0;
         z-index: -1;
-        transition: 0.2s;
+        transition: 0.5s;
         overflow: inherit;
 
         ul {
@@ -52,12 +47,13 @@
             padding-left: 15px;
             padding-right: 15px;
             height: 50px;
+            
         }
     }
 }
 
 .dropdown-content.show {
-    transition: 0.2s;
+    transition: 0.5s;
     opacity: 1;
     margin-top: 0;
     margin-bottom: 31px;
@@ -81,10 +77,8 @@
 
         button {
             height: 30px;
-
-            p{
+            h2{
                 font-size: 13px;
-            
             }
         }
         
@@ -109,11 +103,19 @@
     }
 }
 
- .container {
-        display: flex;
-        flex-direction: column;
-        width: 90%;
-        @media (max-width: 768px) {
-            width: 100%;
-        }
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+     @media (max-width: 768px) {
+        width: 100%;
     }
+}
+    
+.title-style-about {
+    font-size: 24px;
+    @media (max-width: 768px) {
+        font-size: 13px;
+    }
+}
+    

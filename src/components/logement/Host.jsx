@@ -6,7 +6,7 @@ function Host () {
     const host = HostData.find ((host) => host.id === id);
     return (
         <div className="host">
-             <div className="host-name">
+            <div className="host-name">
                 <span>{host.host.name}</span>
             </div>
             <div className="host-avatar">

@@ -13,21 +13,19 @@ function About ({ style }) {
     return (
         <div className="home">
             <Banner src={img} style={{...style, filter: 'brightness(70%)' }}/>
-        <div className='MenuDropDown' style={{...style, flexDirection: 'column', alignItems: 'center', gap:'0'}}>
-            {[...Info].map((info, index) => {
-                return (
-                    <div className='container' key={index}>
-                    
-                    <Dropdown  
-                        title={info.title} 
-                        description={info.description}
-                        />
-                    </div>
-                )
-            })}
-            
-
-           </div>
+            <div className='MenuDropDown' style={{...style, flexDirection: 'column', alignItems: 'center', gap:'0'}}>
+                {[...Info].map((info, index) => {
+                    return (
+                        <div className='container' key={index}>
+                        <Dropdown  
+                            title={info.title}
+                            className="title-style-about" 
+                            description={info.description}
+                            />
+                        </div>
+                    )
+                })}
+            </div>
         </div>
     );
 }
