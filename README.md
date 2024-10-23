@@ -8,14 +8,20 @@ L'utilisation de SASS pour gérer le CSS et l'implémentation d’animations CSS
 
 ## Installation
 
-1. Clonez le dépôt :
-    ```sh
-    git clone https://github.com/votre-utilisateur/votre-repo.git
-    ```
-2. Installez les dépendances :
-    ```sh
-    npm install
-    ```
+1. Clonez le dépôt dans le terminal:
+```sh
+git clone https://github.com/KD-Dev-Tech/P7-kasa.git
+```
+
+2. Accédez au répertoire du projet :
+```sh
+cd kasa
+ ```
+
+3. Installez les dépendances :
+```sh
+npm install
+```
 
 ## Utilisation
 
