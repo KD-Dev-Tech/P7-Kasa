@@ -42,6 +42,8 @@ const SlideShow = () => {
         <div className="carousel">
           <img src={logementData.pictures[index]} alt={logementData.title} /> 
           {logementData.pictures.length > 1 && ( 
+            
+            // affichage du numéro de l'image et des flèches de navigation
             <>
               <p>{index + 1}/{logementData.pictures.length}</p>
               <div className="arrow">
