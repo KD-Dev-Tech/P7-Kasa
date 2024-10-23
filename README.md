@@ -1,7 +1,7 @@
 # Kasa 
-Créez une application web de location immobilière avec React
+**Créez une application web de location immobilière avec React**
 
-![](./assets/images/background.png)
+![Background](src/assets/images/background.png)
 
 Dans ce projet, j'ai développé le front-end d'une application en utilisant **React** et **React Router** pour créer une interface moderne et réactive. J'ai configuré la navigation entre les pages avec React Router et utilisé des données simulées à partir d'un fichier JSON. Le projet s'est concentré uniquement sur le front-end, en suivant des maquettes fournies, avec Create React App et Node.js. 
 L'utilisation de SASS pour gérer le CSS et l'implémentation d’animations CSS
